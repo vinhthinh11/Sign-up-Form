@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>sign up form</title>
+</head>
+<body>
+    <div>
+        <div class="left">
+            <img class="back" src="./dominik-lange-BFsm5vldl2I-unsplash.jpg" alt="">
+            <div class="front"><img src="./odin-lined.png"><p>Sign up</p></div>
+        </div>
+        <div class="right">
+            <div class="top-text">
+            <h1>Sign up to become our member</h1>
+            <h3>You know you want to</h3>
+            <h3>Let's do it!!!</h3>
+            </div>
+            <form action="#" method="post">
+                <fieldset>
+                    <div class="content">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="fname" required pattern="[a-zA-Z]+" minlength="2">
+                    <div class="error"></div>    
+                    </div>
+                    <div class="content">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastname" id="lname" required pattern="[a-zA-Z ]+[a-z]$">
+                    <div class="error"></div>      
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="content">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" pattern="\d{10}">
+                    <div class="error"></div>  
+                    </div>
+                    <div class="content">
+                    <label for="email">Email Adress</label>
+                    <input type="email" name="email" id="email" required>
+                    <div class="error"></div>  
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="content">
+                    <label for="password">Password</label>
+                    <input type="password" name="pwd" id="pwd">
+                    <div class="error"></div>  
+                    </div>
+                    <div class="content">
+                    <label for="comfirmpwd">Comfirm Password</label>
+                    <input type="password" name="comfirmpwd" id="comfirmpwd">
+                    <div class="error"></div>  
+                    </div>
+                </fieldset>
+            </form>
+            <div class="bottom-text">
+            <button style="flex:1;" type="submit"><h4>Create Account</h4></button>
+            <h4 style="flex:1;">Already have account <span><a href="#">Login</a></span></h4>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
